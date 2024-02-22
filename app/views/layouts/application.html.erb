@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <nav class="navbar">
+      <h3><%= link_to 'Your WatchList', lists_path, class: "text-decoration-none text-dark p-0 m-0" %></h3>
+      <p><%= link_to "Add List", new_list_path, class: "btn btn-sm" %></p>
+    </nav>
     <%= yield %>
   </body>
 </html>
+
+    <%# <nav class="navbar-lewagon">
+      <div class="container-fluid p-1">
+      </div>
+    </nav> %>

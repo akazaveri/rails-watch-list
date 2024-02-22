@@ -1,12 +1,27 @@
-.navbar-lewagon {
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+.navbar {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  background: rgb(238, 238, 233);
+  padding: 10px 40px;
+  margin: 0;
+  height: 80px;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar h3 {
+  margin: 0;
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: -1px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar p {
+  margin: 0;
+  font-family: "DM Mono", monospace;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -1px;
 }

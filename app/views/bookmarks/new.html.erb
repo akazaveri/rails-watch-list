@@ -1,5 +1,5 @@
 <div class="container mt-5">
-  <h1>Add a movie to <strong><%=@list.name%></h1></strong>
+  <h2>Add a movie to <strong><%=@list.name%></h2></strong>
   <div>
     <%= simple_form_for [@list, @bookmark] do |f| %>
       <%= f.input :comment, label: "Add a comment"%>

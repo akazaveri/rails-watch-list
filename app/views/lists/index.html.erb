@@ -1,9 +1,7 @@
-<div class="container mt-5">
-  <div class="d-flex flex-row align-items-center">
-    <h1>My Lists</h1>
-    <p><%= link_to "Add a new list", new_list_path, class: "btn btn-sm btn-primary ms-3"%></p>
-  </div>
+<div class="row gap-0">
   <% @lists.each do |list| %>
-    <div class="card p-3"><%= link_to list.name, list_path(list) %></div>
+    <%= link_to list_path(list), class: "col-6 p-0 list-card" do %>
+      <h3 class="list-title"><%= list.name %></h3>
+    <% end %>
   <% end %>
 </div>

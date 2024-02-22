@@ -1,0 +1,63 @@
+.list-card {
+  border: 0.5px solid black;
+  border-bottom: 0;
+  border-right: 0;
+  height: 400px;
+  position: relative;
+
+  &:hover {
+    background-color: rgb(218, 218, 214);
+  }
+}
+
+.list-title {
+  position: absolute;
+  top: 320px;
+  left: 50px;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+}
+
+.movie-card-border {
+  border: 0.5px solid black;
+  border-left: 0;
+}
+
+.image-border {
+  border-right: 0.5px solid black;
+}
+
+.label {
+  background-color: rgb(216, 216, 214);
+  padding: 2px 8px;
+  color: black;
+  font-family: "DM Mono", monospace;
+  border: none;
+  font-size: 12px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.movie-title {
+  font-family: "DM Mono", monospace;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.movie-text {
+  font-family: "DM Mono", monospace;
+  font-size: 14px;
+}
+
+.movie-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 15px;
+}
