@@ -4,4 +4,7 @@
       <h3 class="list-title"><%= list.name %></h3>
     <% end %>
   <% end %>
+  <%= link_to new_list_path, class: "col-6 p-0 list-card" do %>
+      <h3 class="list-title text-secondary">Create a list</h3>
+  <% end %>
 </div>
