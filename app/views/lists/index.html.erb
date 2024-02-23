@@ -1,6 +1,6 @@
 <div class="row gap-0">
   <% @lists.each do |list| %>
-    <%= link_to list_path(list), class: "col-6 p-0 list-card" do %>
+    <%= link_to list_path(list), class: "col-6 p-0 list-card",style: list.photo.attached? ? "background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('#{ cl_image_path list.photo.key, height: 465, crop: :fill }')" : "" do %>
       <h3 class="list-title"><%= list.name %></h3>
     <% end %>
   <% end %>
